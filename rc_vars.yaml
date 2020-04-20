@@ -6,11 +6,11 @@ kubeconfig_localhost: True
 kubectl_localhost: True
 loadbalancer_apiserver_localhost: True
 loadbalancer_apiserver_type: nginx
-download_container: True
-download_run_once: True
-download_force_cache: True
-download_localhost: True
-download_keep_remote_cache: True
+#download_container: True
+#download_run_once: True
+#download_force_cache: True
+#download_localhost: True
+#download_keep_remote_cache: True
 docker_log_opts: "--log-opt max-size=50m --log-opt max-file=5 --log-driver json-file --log-opt labels=rc,test"
 dashboard_enabled: False
 metrics_server_enabled: True
@@ -25,5 +25,5 @@ etcd_version: v3.3.12
 kube_router_version: "v0.4.0"
 coredns_version: "1.6.9"
 helm_version: "v3.1.0"
-local_release_dir: /etc/kubespray/releases
-download_cache_dir: /etc/kubespray/cache
+#local_release_dir: /etc/kubespray/releases
+#download_cache_dir: /etc/kubespray/cache
