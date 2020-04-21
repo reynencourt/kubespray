@@ -1,0 +1,22 @@
+kube_network_plugin: canal
+etcd_metrics: basic
+kube_apiserver_port: 443
+kube_api_anonymous_auth: True
+kubeconfig_localhost: True
+kubectl_localhost: True
+loadbalancer_apiserver_localhost: True
+loadbalancer_apiserver_type: nginx
+docker_log_opts: "--log-opt max-size=50m --log-opt max-file=5 --log-driver json-file --log-opt labels=rc,test"
+dashboard_enabled: False
+metrics_server_enabled: True
+cert_manager_enabled: False
+kube_version: v1.15.0
+container_manager: docker
+kube_image_repo: "k8s.gcr.io"
+gcr_image_repo: "gcr.io"
+docker_image_repo: "docker.io"
+quay_image_repo: "quay.io"
+etcd_version: v3.3.12
+kube_router_version: "v0.4.0"
+coredns_version: "1.6.9"
+helm_version: "v3.1.0"
