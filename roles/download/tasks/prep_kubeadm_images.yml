@@ -7,6 +7,9 @@
     - not skip_downloads | default(false)
     - downloads.kubeadm.enabled
 
+- name: Ensures kube_config_dir exists
+  file: path={{ kube_config_dir }} state=directory
+
 - name: prep_kubeadm_images | Create kubeadm config
   template:
     src: "kubeadm-images.yaml.j2"
